@@ -47,7 +47,7 @@
 
 .btn-actions:hover {
 /* TODO: animate hover on button, my animate isn't right */
-    background-color: blue;
+    background-color: lightgray;
     animation: ease-in-out 100ms 0ms;
     color: #FFFFFF;
 }
