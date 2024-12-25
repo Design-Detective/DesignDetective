@@ -1,16 +1,15 @@
 {
-    "manifest_version": 0.1,
-    "name": "DesignDetective",
-    "description": "Web extension that retrive important fonts & color palette infos, powered by TensorFlox.js AI",
-    "version": "0.1.0",
+    "manifest_version": 3,
+    "name": "DesigDetective",
+    "version": "1.0",
     "action": {
-        "default_popup": "popup.html",
-        "defaut_icon": "icon/DesignDetectiveIcon.png"
-    },
+        "default_popup": "popup.html"
+      },
+    "permissions": ["activeTab", "scripting"],
     "content_scripts": [
-        {
-            "matches": ["<all_url"],
-            "js": "content.js"
-        }
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
     ]
-}
+  }

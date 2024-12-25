@@ -16,6 +16,11 @@
     background-color: #181818;
 }
 
+body {
+    min-width: 400px;
+    border-radius: 10px;
+}
+
 /* div properties */
 .master-container, .container-title {
     display: flex;
