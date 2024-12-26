@@ -1,26 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <title>Design Detective</title>
-</head>
-<body>
-    <div class="master-container">
-        <div class="container-title">
-            <h1 name="title" id="title">Welcome to <em>Design Detective !</em></h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/popup.css" />
+        <title>Design Detective</title>
+    </head>
+    <body>
+        <div class="master-container">
+            <div class="container-title">
+                <h1 name="title" id="title">
+                    Welcome to <em>Design Detective !</em>
+                </h1>
+            </div>
+            <div class="container-form">
+                <form class="button-select">
+                    <div class="action">
+                        <button class="btn-actions" id="btn" type="button">
+                            Retreive the design !
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="response"></div>
         </div>
-        <div class="container-form">
-            <form class="button-select">
-                <div class="action">
-                    <button class="btn-actions" id="btn" type="button">Retreive the design !</button>
-                </div>      
-            </form>
-        </div>
-        <div class="response">
-        </div>
-    </div>
-    <script src="scripts/contentScript.js"></script>
-</body>
+        <script src="scripts/contentScript.js"></script>
+    </body>
 </html>
