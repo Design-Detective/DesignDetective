@@ -37,6 +37,14 @@ body {
     border-radius: 10px;
 }
 
+.container-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 1.25rem;
+    padding: 1.25rem;
+}
 .btn-actions {
     display: flex;
     align-content: center;
@@ -59,14 +67,14 @@ body {
 }
 
 /* diverse fonts properties */
-#title {
+.title, #title {
     font-family: var(--font);
     font-size: xx-large;
     font-weight: bolder;
     color: var(--text-color-dark);
 }
 
-#text {
+.text, #text {
     font-family: var(--font);
     font-size: large;
     font-weight: bold;
