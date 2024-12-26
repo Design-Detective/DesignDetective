@@ -1,12 +1,9 @@
 // file that serve to subscribe the background worker of my web extension.
-
-const { Text } = require("@xmldom/xmldom");
-
 // thanks.html when installing the extension:
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === "install") {
     chrome.tabs.create({
-      url: "thanks.html",
+      url: "html/thanks.html",
     });
   }
 });

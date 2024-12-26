@@ -1,6 +1,3 @@
-## for building the app
-- nodejs (latest)
-- npm (latest)
-- tensorflow.js (latest)
-- icons & design charts
-
+## for building the app:
+- coffee :)
+- google chrome api doc :(

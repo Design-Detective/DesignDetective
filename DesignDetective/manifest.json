@@ -10,7 +10,7 @@
   "permissions": ["activeTab", "userScripts", "scripting"],
   "host_permissions": ["*://*/*"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "html/popup.html",
     "default_icon": {
       "16": "icon/DesignDetectiveIcon.png",
       "48": "icon/DesignDetectiveIcon.png",
