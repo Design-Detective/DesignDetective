@@ -1,15 +1,35 @@
 {
-    "manifest_version": 3,
-    "name": "DesigDetective",
-    "version": "1.0",
-    "action": {
-        "default_popup": "popup.html"
-      },
-    "permissions": ["activeTab", "scripting"],
-    "content_scripts": [
-      {
-        "matches": ["*://*/*"],
-        "js": ["content.js"]
-      }
-    ]
-  }
+  "name": "DesignDetective",
+  "version": "1.0",
+  "description": "Fetch and print out the design cues of a website.",
+  "permissions": ["storage","tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon/DesignDetectiveIcon.png"
+  },
+  "minimum_chrome_version": "93",
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["scripts/contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "style/*.css",
+        "script/*.js"
+      ],
+      "matches": [
+        "*://*/*"
+      ]
+    }
+  ],
+  "manifest_version": 3
+}
