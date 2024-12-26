@@ -1,13 +1,13 @@
 {
   "name": "DesignDetective",
   "version": "1.0",
-  "description": "Fetch and print out the design cues of a website.",
-  "permissions": ["storage","tabs"],
+  "description": "Fetch & print out the design cues of a website.",
+  "permissions": ["tabs"],
+  "minimum_chrome_version": "93",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon/DesignDetectiveIcon.png"
   },
-  "minimum_chrome_version": "93",
   "background": {
     "service_worker": "scripts/background.js",
     "type": "module"
