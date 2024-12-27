@@ -17,11 +17,10 @@ chrome.action.setBadgeBackgroundColor({ color: "#5A3737" });
 btn.addEventListener('click', async function getCurrentTab() {
   let queryOptions = { active: true, lastFocusedWindow: true };
   const tabs = await chrome.tabs.query(queryOptions);
-  console.log("found tab:", tabs);
 
   if (tabs.length > 0) {
     const tabId = tabs[0].id;
-    console.log("Found tabs id:", tabId);
+    
     chrome.scripting.executeScript({
       target: { tabId: tabId },
       func: () => {
