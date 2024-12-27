@@ -45,6 +45,7 @@ body {
     margin: 1.25rem;
     padding: 1.25rem;
 }
+
 .btn-actions {
     display: flex;
     align-content: center;
@@ -81,7 +82,26 @@ body {
     color: var(--text-color-dark);
 }
 
-p {
+.response-font {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-content: flex-start;
+    padding: .25rem;
+    color: var(--font);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: .8rem;
+}
+
+.response-color {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-content: flex-start;
+    padding: .25rem;
     color: var(--font);
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;

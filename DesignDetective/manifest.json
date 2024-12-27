@@ -1,6 +1,6 @@
 {
   "name": "DesignDetective",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Fetch & print out the design cues of a website.",
   "minimum_chrome_version": "120",
   "permissions": ["activeTab", "userScripts", "scripting", "contextMenus", "fontSettings"],

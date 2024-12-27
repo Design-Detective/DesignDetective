@@ -33,7 +33,7 @@ btn.addEventListener('click', async function getCurrentTab() {
                 if (rule.style.fontFamily && !rule.style.fontFamily.includes('var')) {
                   fontFamilies.add(rule.style.fontFamily);
                 }
-                if (rule.style.color && (rule.style.color.includes('#') || rule.style.color.includes('rgba') || rule.style.color.includes('hsl') || rule.style.color.includes('rgb') && !rule.style.color.includes('var'))) {
+                if (rule.style.color && !rule.style.color.includes('var') && (rule.style.color.includes('#') || rule.style.color.includes('rgba') || rule.style.color.includes('hsl') || rule.style.color.includes('rgb'))) {
                   colorPalette.add(rule.style.color);
                   console.log(colorPalette);
                 }
