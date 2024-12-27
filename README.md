@@ -1,7 +1,7 @@
 # DesignDetective - 🔎
 
 ## ⚠️ - ATTENTION: Since i had only 5 days before this assignement is due, i have to forget about AI training shenanigans for now. The web extentions will only parse through website's CSS and return Fonts and Color attributes. FOR NOW!
-Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc...
+### Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc...
 There is always improvements to do !
 
 ## Synopsis:
