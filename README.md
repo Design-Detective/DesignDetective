@@ -1,8 +1,5 @@
 # DesignDetective - 🔎
 
-### ⚠️ - ATTENTION: Since i had only 5 days before this assignement is due, i have to forget about AI training shenanigans for now. The web extentions will only parse through website's CSS and return Fonts and Color attributes. FOR NOW!
-### Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc... There is always improvements to do !
-
 ## Synopsis:
 A browser extension, available on Chromium and Mozilla based browser, written in JavaSript, HTML and CSS, that use AI to return the font and hexadecimal values of colors used on a website.
 
@@ -20,3 +17,6 @@ Keep in mind that this project is only meant to be runned one time by the Harvar
 pull to the second branch !
 'devel-2' is for all devs out there, who want to contribute to the project. 'devel-1' is my branch. I will surely try to expand the project further, because there is so much potential to me. For now, in order to respect Academy honesty and my assgnement rules, i will not accept pull request, nor used any outside help: I need to pulled the basic web extension of all alone.
 For the future, i would love to train my own AI model, host it on a server, and use it to replace TensorFlow AI. For now though, let's code this web extension!
+
+### ⚠️ - ATTENTION: Since i had only 5 days before this assignement is due, i have to forget about AI training shenanigans for now. The web extentions will only parse through website's CSS and return Fonts and Color attributes. FOR NOW!
+### Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc... There is always improvements to do !
