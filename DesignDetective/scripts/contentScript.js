@@ -1,7 +1,6 @@
 // JavaScript of my web extension: Retrive and print ou Font and Color palette of the last active tab.
 const btn = document.getElementById("btn");
-
-// thanks.html when installing the extension:
+// Draw 'thanks.html' when installing the extension:
 chrome.runtime.onInstalled.addListener(({ reason }) => {
   if (reason === "install") {
     chrome.tabs.create({
@@ -13,11 +12,11 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
 // set some UI elements:
 chrome.action.setBadgeText({ text: "ON" });
 chrome.action.setBadgeBackgroundColor({ color: "#5A3737" });
-//TODO: add a condition where if (message sent (so scode ran) = clear.child.append() then rerun the script):
+//TODO: add a condition where: if (message sent (so scode ran) = clear.child.append() then rerun the script):
 btn.addEventListener('click', async function getCurrentTab() {
   let queryOptions = { active: true, lastFocusedWindow: true };
   const tabs = await chrome.tabs.query(queryOptions);
-
+  // if [tabs] > 0, execute the code, otherwise, throw out an error.
   if (tabs.length > 0) {
     const tabId = tabs[0].id;
     
@@ -40,7 +39,7 @@ btn.addEventListener('click', async function getCurrentTab() {
               }
             }
           } catch (e) {
-            console.error(e);
+            alert(e);
           }
         }
         chrome.runtime.sendMessage({ fontFamilies: Array.from(fontFamilies) });
