@@ -1,8 +1,7 @@
 # DesignDetective - 🔎
 
-## ⚠️ - ATTENTION: Since i had only 5 days before this assignement is due, i have to forget about AI training shenanigans for now. The web extentions will only parse through website's CSS and return Fonts and Color attributes. FOR NOW!
-### Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc...
-There is always improvements to do !
+# ⚠️ - ATTENTION: Since i had only 5 days before this assignement is due, i have to forget about AI training shenanigans for now. The web extentions will only parse through website's CSS and return Fonts and Color attributes. FOR NOW!
+### Once i graduate from harvard's CS50x classes, i'll keep working on this project to implement AI, refine user interface, web extension privacy, etc... There is always improvements to do !
 
 ## Synopsis:
 A browser extension, available on Chromium and Mozilla based browser, written in JavaSript, HTML and CSS, that use AI to return the font and hexadecimal values of colors used on a website.
