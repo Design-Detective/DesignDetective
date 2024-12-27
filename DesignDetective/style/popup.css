@@ -80,3 +80,10 @@ body {
     font-weight: bold;
     color: var(--text-color-dark);
 }
+
+p {
+    color: var(--font);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: .8rem;
+}
