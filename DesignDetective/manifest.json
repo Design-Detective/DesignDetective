@@ -3,31 +3,27 @@
   "version": "1.0",
   "description": "Fetch & print out the design cues of a website.",
   "minimum_chrome_version": "120",
-  "background": {
-    "service_worker": "scripts/background.js",
-    "type": "module"
-  },
-  "permissions": ["activeTab", "userScripts", "scripting"],
+  "permissions": ["activeTab", "userScripts", "scripting", "contextMenus"],
   "host_permissions": ["*://*/*"],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": {
       "16": "icon/DesignDetectiveIcon.png",
       "48": "icon/DesignDetectiveIcon.png",
       "128": "icon/DesignDetectiveIcon.png"
     },
+    "default_popup": "popup.html",
     "default_title": "Design Detective"
   },
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
-      "js": ["scripts/contentScript.js"]
+      "js": ["scripts/contentScript.js"],
+      "matches": ["*://*/*"]
     }
   ],
   "web_accessible_resources": [
     {
-      "matches": ["*://*/*"],
-      "resources": ["style/*.css", "script/*.js"]
+      "resources": ["style/*.css", "script/*.js"],
+      "matches": ["*://*/*"]
     }
   ],
   "manifest_version": 3
