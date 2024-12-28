@@ -99,30 +99,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   chrome.action.setBadgeBackgroundColor({ color: "#181818" });
 });
 
-
-/*
-async function waitForElement(selector) {
-  console.log("Waiting fo element: " + selector);
-  while (document.querySelector(selector) === null) {
-      await new Promise(resolve => requestAnimationFrame(resolve));
+/* TODO: Clear Dynamicly added hr tags :)
+document.getElementById('clear-btn').addEventListener("click", function() {
+  let textElements = document.getElementsByClassName("text");
+  for (let i = 0; i < textElements.length; i++) {
+    textElements[i].innerHTML=''; 
   }
-  console.log("Element found:" + selector);
-  return document.querySelector(selector);
-}
-
-async function clearElement() {
-  try {
-      console.log("clearElement called");
-      const result = await waitForElement('#text');
-      console.log("Element found:", result);
-      const paragraphs = result.getElementsByTagName('p');
-
-      if (paragraphs.length > 0) {
-          result.innerHTML = "";
-          console.log("Element cleared");
-      }
-  } catch (e) {
-      console.error(e);
-  }
-}
+});
 */
