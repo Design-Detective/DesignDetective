@@ -1,6 +1,0 @@
-## for building the app
-- nodejs (latest)
-- npm (latest)
-- tensorflow.js (latest)
-- icons & design charts
-
